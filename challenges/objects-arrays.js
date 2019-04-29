@@ -1,4 +1,3 @@
-// ==== Objects ====
 
 /* 
   Given the following information about dinosaurs, create 3 objects: 
@@ -73,15 +72,11 @@ Once you have the new array created, sort the universities alphabetically and lo
 
 const universities = [];
 for(let i = 0; i < graduates.length; i++) {
-  let mappedObj1 = {};
-  mappedObj1.university = graduates[i].university;
-  universities.push(mappedObj1);
-  mappedObj1 = {};
+  universities.push(graduates[i].university);
+  universities.sort();
 }
 
 console.log(universities);
-console.log(universities.sort()); //??sort alphabetically
-
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. 
 
